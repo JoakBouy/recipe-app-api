@@ -138,3 +138,8 @@ build/
 media/
 staticfiles/
 venv/
+
+
+
+data/db/base
+data/db
