@@ -128,7 +128,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-settings.py 
+settings.py
 *.pyc
 *.pyo
 __pycache__
@@ -143,3 +143,6 @@ venv/
 
 data/db/base
 data/db
+
+
+app/static/
