@@ -1,4 +1,4 @@
-FROM python:3.9-alpine3.13
+FROM python:3.11.0a1-alpine3.14
 LABEL maintainer="Buoy"
 
 ENV PYTHONUNBUFFERED 1
@@ -30,4 +30,3 @@ RUN pip install flake8
 ENV PATH="/py/bin:$PATH"
 
 USER django-user
-  
