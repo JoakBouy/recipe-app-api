@@ -7,7 +7,7 @@ from django.urls import reverse
 from rest_framework import APIClient
 from rest_framework import status
 
-CREATE_USER_URL = reverse('user:create0')
+CREATE_USER_URL = reverse('user:create')
 
 def create_user(**params):
     """Craete and return a new user"""
@@ -46,7 +46,7 @@ def create_user(**params):
         """Test an error when password is too short"""
         payload = {
             'email': 'test@example.com',
-            'password': 'pw'
+            'password': 'pw',
             'name': 'Test Name',
         }
         res = self.client.post(CREATE_USER_URL, payload)
